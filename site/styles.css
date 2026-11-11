@@ -43,6 +43,10 @@
   --fixed-field: #120f1d;
   --fixed-violet: #b18cff;
 
+  /* Pocket Garden: its spring-leaf green on dusk soil */
+  --garden-field: #111a0f;
+  --garden-leaf: #7cc462;
+
   --display: 'Tektur', 'Arial Narrow', sans-serif;
   --mono: 'Martian Mono', ui-monospace, monospace;
   --text: 'Tektur', system-ui, sans-serif;
@@ -177,6 +181,11 @@ a {
   --field: var(--fixed-field);
 }
 
+.row--garden {
+  --accent: var(--garden-leaf);
+  --field: var(--garden-field);
+}
+
 .row.is-selected {
   background: var(--field);
 }
@@ -282,15 +291,15 @@ a {
   transform: rotate(-3deg);
 }
 
-/* Fixed Point's status: a small outlined callout, a dot and mono caps, kept quieter than the title */
+/* Beta status (Fixed Point, Pocket Garden): a small outlined callout, a dot and mono caps, kept quieter than the title */
 .cut {
   align-self: center;
   display: inline-flex;
   align-items: center;
   gap: 0.6em;
   padding: 0.45em 0.7em;
-  border: 1px solid color-mix(in srgb, var(--fixed-violet) 55%, transparent);
-  color: var(--fixed-violet);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  color: var(--accent);
   font-family: var(--mono);
   font-weight: 500;
   font-stretch: 100%;
@@ -419,9 +428,14 @@ a {
   background: #0b0f17;
 }
 
+.row--garden .row__art {
+  background: #1a120b;
+}
+
 .row--loot .row__art img,
 .row--save .row__art video,
-.row--fixed .row__art img {
+.row--fixed .row__art img,
+.row--garden .row__art img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -683,7 +697,8 @@ kbd svg {
     color: var(--art-ivory);
   }
 
-  .row--fixed .row__hook {
+  .row--fixed .row__hook,
+  .row--garden .row__hook {
     color: var(--ink);
   }
 

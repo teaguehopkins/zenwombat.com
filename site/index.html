@@ -8,7 +8,7 @@
     <title>Zen Wombat: small games you play in your browser</title>
     <meta
       name="description"
-      content="Zen Wombat makes small, free browser games. Take turns keeping each other's ghosts alive in Fixed Point, recover a stolen art collection in Save the Art, clear 99+ notifications in Legends of Loot, or dogfight with real momentum in Vector."
+      content="Zen Wombat makes small, free browser games. Take turns keeping each other's ghosts alive in Fixed Point, plant a calm three-season garden in Pocket Garden, recover a stolen art collection in Save the Art, clear 99+ notifications in Legends of Loot, or dogfight with real momentum in Vector."
     />
     <link rel="canonical" href="https://zenwombat.com/" />
     <!-- Link previews (Discord, Slack, iMessage, etc.). Image URLs must be absolute. -->
@@ -17,7 +17,7 @@
     <meta property="og:title" content="Zen Wombat" />
     <meta
       property="og:description"
-      content="Small, free games you play in your browser. Fixed Point, Save the Art, Legends of Loot and Vector."
+      content="Small, free games you play in your browser. Fixed Point, Pocket Garden, Save the Art, Legends of Loot and Vector."
     />
     <meta property="og:url" content="https://zenwombat.com/" />
     <meta property="og:image" content="https://zenwombat.com/og.png?v=5" />
@@ -25,7 +25,7 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Zen Wombat: a game-select screen with Fixed Point, Save the Art, Legends of Loot and Vector."
+      content="Zen Wombat: a game-select screen with Fixed Point, Pocket Garden, Save the Art, Legends of Loot and Vector."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -50,6 +50,20 @@
             "description": "An asynchronous co-op time-loop shooter: friends take turns through one shared link, and every earlier player replays as a ghost the next one has to keep alive.",
             "genre": ["Action", "Shooter"],
             "playMode": ["CoOp", "MultiPlayer"],
+            "gamePlatform": "Web browser",
+            "applicationCategory": "Game",
+            "operatingSystem": "Any",
+            "isAccessibleForFree": true,
+            "publisher": { "@id": "https://zenwombat.com/#studio" }
+          },
+          {
+            "@type": "VideoGame",
+            "name": "Pocket Garden",
+            "url": "https://garden.zenwombat.com/",
+            "image": "https://zenwombat.com/img/pocket-garden.webp",
+            "description": "A calm, turn-based garden puzzle for phones: draft seeds and rule cards, then plant a small garden through three seasons.",
+            "genre": ["Puzzle", "Casual"],
+            "playMode": "SinglePlayer",
             "gamePlatform": "Web browser",
             "applicationCategory": "Game",
             "operatingSystem": "Any",
@@ -138,6 +152,31 @@
           </div>
           <a class="row__art" href="https://fixedpoint.pages.dev/" tabindex="-1" aria-hidden="true">
             <img src="img/fixed-point.webp" width="600" height="500" alt="" decoding="async" />
+          </a>
+        </li>
+
+        <li class="row row--garden" data-row>
+          <div class="row__text">
+            <h2 class="row__title">
+              <svg class="cursor" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3 18 10 3 17 7 10Z" /></svg>
+              <span>Pocket Garden</span>
+              <span class="cut">Public beta</span>
+            </h2>
+            <p class="row__hook">
+              A calm garden puzzle in three seasons. Draft your seeds, plant bees beside flowers and frogs beside
+              ponds, and put it down whenever you like.
+            </p>
+            <ul class="facts" aria-label="Details">
+              <li>Solo, turn-based</li>
+              <li>Phone first</li>
+              <li>Touch, mouse</li>
+            </ul>
+            <a class="play" href="https://garden.zenwombat.com/" data-play>
+              Play<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+            </a>
+          </div>
+          <a class="row__art" href="https://garden.zenwombat.com/" tabindex="-1" aria-hidden="true">
+            <img src="img/pocket-garden.webp" width="600" height="500" alt="" decoding="async" loading="lazy" />
           </a>
         </li>
 
