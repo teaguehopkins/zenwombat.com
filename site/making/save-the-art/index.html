@@ -6,12 +6,12 @@
     <meta name="theme-color" content="#07090c" />
     <meta name="color-scheme" content="dark" />
     <title>How Save the Art was made · Zen Wombat</title>
-    <meta name="description" content="A shooter where the thing you’re protecting is behind the thing you’re shooting at." />
+    <meta name="description" content="What if, in a bullet hell-style game, you had to be precise, because the room around you mattered?" />
     <link rel="canonical" href="https://zenwombat.com/making/save-the-art/" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Zen Wombat" />
     <meta property="og:title" content="How Save the Art was made" />
-    <meta property="og:description" content="A shooter where the thing you’re protecting is behind the thing you’re shooting at." />
+    <meta property="og:description" content="What if, in a bullet hell-style game, you had to be precise, because the room around you mattered?" />
     <meta property="og:url" content="https://zenwombat.com/making/save-the-art/" />
     <meta property="og:image" content="https://zenwombat.com/img/save-the-art-hit.webp" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,23 +33,39 @@
         <header class="making__head">
           <div class="making__intro">
             <h1 class="row__title">How Save the Art was made</h1>
-            <p class="row__hook">A shooter where the thing you’re protecting is behind the thing you’re shooting at.</p>
+            <p class="row__hook">What if, in a bullet hell-style game, you had to be precise, because the room around you mattered?</p>
             <a class="play" href="https://zenwombat.itch.io/save-the-art">Play<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg></a>
           </div>
           <img src="/img/save-the-art-hit.webp" width="600" height="500" alt="A raid in Save the Art: a mercenary fires across a lamplit room with paintings in the line of fire." />
         </header>
         <div class="making__body">
         <section>
-          <h2>The idea</h2>
-          <p>Every shot needs a backstop. Bullets that miss keep flying, and some go through whoever they hit, so you have to know what’s hanging behind your target before you fire. The strongest guns are also the hardest on the art.</p>
+          <h2>Problem</h2>
+          <div>
+            <p>Shooters fill the screen with bullets, and most of them cost nothing. A miss vanishes into the scenery. The scenery is there to be wrecked, and wrecking it is half the pleasure.</p>
+            <p>We started by turning that around: what if you had to be careful about damaging everything around you? The rest grew from there. The room needed to hold something nobody would want to hit, so it became paintings. Paintings worth fighting over led to a stolen collection, in 1944.</p>
+          </div>
         </section>
         <section>
-          <h2>The hard problem</h2>
-          <p>Surviving art is crated for you, so the fight itself has to create all the risk. Guards hide behind easels, hold canvases up as shields, set fires and plant charges. Make too much noise, or let a guard reach the alarm, and the Burn Order starts a clock. The room keeps asking for a slower shot than it gives you time to take.</p>
+          <h2>Hypothesis</h2>
+          <div>
+            <p>Koster describes fun as the mind mastering a pattern. Most shooters ask you to learn one: where the enemy will be. If every bullet keeps going, there’s a second pattern behind the first, which is what the bullet hits next. We thought reading both at once could be more interesting than reading one faster.</p>
+            <p>It also let the rule carry the meaning. Nobody has to tell you that art is fragile. You learn it when you win a fight and look at the wall.</p>
+          </div>
         </section>
         <section>
-          <h2>What changed</h2>
-          <p>The first brief was chaos. The first playtest said it was too hard and a little too fast, and that art should hurt more to hit. So guards got weaker, everyone slowed down, and every bullet now halves a piece’s condition. It became a game about finding a clean line. Most of the art became work by unknown painters, too, so that a real masterpiece feels like the reason you came.</p>
+          <h2>Experiment</h2>
+          <div>
+            <p>The first test was one plain room, with simple shapes and bullets that kept going. It was too hard, a little too fast, and the art didn’t hurt enough to hit. We had aimed for chaos, and chaos drowned out the choice we wanted players to make.</p>
+            <p>Later tests showed us where the game could be solved without learning it. A riot shield was so strong it was always the right answer. Rushing in with a shotgun met little resistance. Koster warns that players will find the easy pattern if you leave one, and that a solved pattern is a dull one. We set a careful bot against a reckless one to see which way of playing the game was really rewarding.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Solution</h2>
+          <div>
+            <p>We made the game slower and the stakes sharper. Fights became deliberate. Guards fall quickly but hit hard, and every bullet halves what’s left of a piece. Steady aim is the default. The shield now takes your sidearm’s place, and you can’t fire from behind it. On the standard difficulty, the careful bot now beats the reckless one from the first raid.</p>
+            <p>We also made most of the art minor work by unknown painters, so a real masterpiece stands out. When you save one, you learn its true wartime history. The shooting is pulp, and the record of what was stolen is sincere.</p>
+          </div>
         </section>
         <nav class="making__more" aria-label="More making-of pages">
           <span>Also made here:</span>

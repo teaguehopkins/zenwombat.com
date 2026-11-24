@@ -6,12 +6,12 @@
     <meta name="theme-color" content="#07090c" />
     <meta name="color-scheme" content="dark" />
     <title>How Fixed Point was made · Zen Wombat</title>
-    <meta name="description" content="Play with your friends without being online at the same time." />
+    <meta name="description" content="How do you game with friends when you can’t game at the same time anymore?" />
     <link rel="canonical" href="https://zenwombat.com/making/fixed-point/" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Zen Wombat" />
     <meta property="og:title" content="How Fixed Point was made" />
-    <meta property="og:description" content="Play with your friends without being online at the same time." />
+    <meta property="og:description" content="How do you game with friends when you can’t game at the same time anymore?" />
     <meta property="og:url" content="https://zenwombat.com/making/fixed-point/" />
     <meta property="og:image" content="https://zenwombat.com/img/fixed-point-save.webp" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,23 +33,39 @@
         <header class="making__head">
           <div class="making__intro">
             <h1 class="row__title">How Fixed Point was made</h1>
-            <p class="row__hook">Play with your friends without being online at the same time.</p>
+            <p class="row__hook">How do you game with friends when you can’t game at the same time anymore?</p>
             <a class="play" href="https://fixedpoint.pages.dev/?blitz">Play<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg></a>
           </div>
           <img src="/img/fixed-point-save.webp" width="600" height="500" alt="Fixed Point: a live player steps between a hunter and the blue ghost of an earlier player." />
         </header>
         <div class="making__body">
         <section>
-          <h2>The idea</h2>
-          <p>Each player records one track of a level. Everyone after them plays beside that recording and has to keep it alive. Ghosts can’t hear you or change course, but they can leave you cover, supplies and open doors. The cooperation is real. It just travels forward in time.</p>
+          <h2>Problem</h2>
+          <div>
+            <p>You used to be online together every night. Then came jobs, kids and time zones, and now finding one free hour in common takes a week of messages. The friendship is still there. The overlap isn’t.</p>
+            <p>Playing by turns is an old answer, but it usually means waiting for someone to move. We wanted the feeling of having fought beside a friend, when the two of you were never there at once.</p>
+          </div>
         </section>
         <section>
-          <h2>The hard problem</h2>
-          <p>Each new wave is built against the recordings already locked in, aiming at the moments a ghost is carrying, hacking or alone. It has to be dangerous and still beatable, so the generator checks that one player can reach every threat in time. And the past has to replay exactly, so a timeline only locks if everyone in it survived.</p>
+          <h2>Hypothesis</h2>
+          <div>
+            <p>If each of us records one run of the same level, yours can play beside mine as a ghost. If the next wave is hunting that ghost, I have to learn how you play to keep you alive: where you pause, which door you take, when you’re exposed. Koster calls fun the learning of patterns. Here, the pattern to learn is your friend.</p>
+            <p>We thought that could feel like cooperation, even though it runs in one direction. You leave me cover without knowing I’ll need it.</p>
+          </div>
         </section>
         <section>
-          <h2>What changed</h2>
-          <p>People liked the concept more than the first version of it. Four-minute levels in four waiting slots made players hold back, and the phone controls didn’t explain themselves. Now there are 45-second rounds, sticks you can see, and a ghost beside you from your very first round. The original four-player runs are still there. It’s a public beta, and still changing.</p>
+          <h2>Experiment</h2>
+          <div>
+            <p>The first public version had four players, four slots and levels of up to four minutes. We shared it with friends and asked what happened. Marty Cagan separates value risk (will anyone want this?) from usability risk (can they work it?), and the answers split along that line. The idea got an enthusiastic yes. The version we’d built didn’t.</p>
+            <p>One person couldn’t work out the phone controls and gave up. Another left the open slot for someone else, and said the clears weren’t tense enough to share. A third liked it and meant to come back later. That was only a few people, but they agreed on the problem and stumbled on our solution.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Solution</h2>
+          <div>
+            <p>We kept the problem and changed the answer. Rounds are now 45 seconds. Play drops you straight in beside a ghost, with the sticks drawn where your thumbs go. There are more layers to take, so nobody has to guard a seat. Each wave is hidden the first time and stays the same on every retry. A surprise becomes a pattern you can master.</p>
+            <p>It’s a public beta because the experiment isn’t over. We still have to find out whether short rounds are tense enough to share, and whether a ghost is enough company to bring you back. The answer we’re after hasn’t changed: play with your friends without being online at the same time.</p>
+          </div>
         </section>
         <nav class="making__more" aria-label="More making-of pages">
           <span>Also made here:</span>

@@ -6,12 +6,12 @@
     <meta name="theme-color" content="#07090c" />
     <meta name="color-scheme" content="dark" />
     <title>How Legends of Loot was made · Zen Wombat</title>
-    <meta name="description" content="A whole game about the part before the game: every menu has a red dot, and clearing one makes more." />
+    <meta name="description" content="What’s left of a game when you keep the notifications and take out everything else?" />
     <link rel="canonical" href="https://zenwombat.com/making/legends-of-loot/" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Zen Wombat" />
     <meta property="og:title" content="How Legends of Loot was made" />
-    <meta property="og:description" content="A whole game about the part before the game: every menu has a red dot, and clearing one makes more." />
+    <meta property="og:description" content="What’s left of a game when you keep the notifications and take out everything else?" />
     <meta property="og:url" content="https://zenwombat.com/making/legends-of-loot/" />
     <meta property="og:image" content="https://zenwombat.com/img/legends-of-loot.webp" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,23 +33,39 @@
         <header class="making__head">
           <div class="making__intro">
             <h1 class="row__title">How Legends of Loot was made</h1>
-            <p class="row__hook">A whole game about the part before the game: every menu has a red dot, and clearing one makes more.</p>
+            <p class="row__hook">What’s left of a game when you keep the notifications and take out everything else?</p>
             <a class="play" href="https://legendsofloot.zenwombat.com/">Play<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg></a>
           </div>
           <img src="/img/legends-of-loot.webp" width="600" height="500" alt="Launcher tiles from Legends of Loot, covered in red notification dots." />
         </header>
         <div class="making__body">
         <section>
-          <h2>The idea</h2>
-          <p>A red dot on a menu means something new is buried inside, and you have to dig for it. Legends of Loot keeps that itch and throws away the game it was meant to sell. You clear notifications until there are none, in an arc that swells to chaos and then drains to zero.</p>
+          <h2>Problem</h2>
+          <div>
+            <p>Games and apps have trained us to answer a red dot. Often the thing behind it doesn’t matter, and we know that before we tap. We clear it anyway, and the clearing starts to organise the day: check, dismiss, check again.</p>
+            <p>We wanted to look at that honestly, from the inside. An essay could say that notifications run our lives. A game could let you notice your own hand going to the dot.</p>
+          </div>
         </section>
         <section>
-          <h2>The hard problem</h2>
-          <p>Clearing a notification can set off others, so the run could easily loop forever or strand the player one dot short. Every notification in the main run fires at most once, and a snoozed one comes back at most twice. A bot then clears the game in random order: over 500 runs it finished in 159 to 179 clears, and every one of the 191 notifications could be reached.</p>
+          <h2>Hypothesis</h2>
+          <div>
+            <p>In <cite>A Theory of Fun for Game Design</cite>, Raph Koster argues that fun comes from learning a pattern: “With games, learning is the drug.” Once there’s nothing left to learn, we get bored. A red dot borrows the look of that loop. It promises something new, pays out a tiny completion and teaches you nothing.</p>
+            <p>So if we removed the game and kept only the dots, we expected players to see the pattern quickly and keep clearing anyway. The gap between knowing and stopping is what the game is about.</p>
+          </div>
         </section>
         <section>
-          <h2>What changed</h2>
-          <p>Badge counts are never stored. Each menu counts the live notifications beneath it, so a parent can’t disagree with its children. Once the joke worked, a second pass gave it sound, music, card art and a proper moment at Inbox Zero, because the payoff has to feel earned even when the prize is nothing.</p>
+          <h2>Experiment</h2>
+          <div>
+            <p>We built the launcher for a card game that doesn’t exist and gave it only the rituals: daily logins, a battle pass, terms of service, a friend called Gary. Clearing a notification is an achievement, and the achievement is a notification. Even Mark All As Read makes more.</p>
+            <p>The satire only works if the promise is kept, so the first risk was whether zero could be reached. Each notification in the main run fires at most once, and snoozing has a limit. We had a bot clear everything in random order 500 times. Every run ended, in 159 to 179 clears. What a bot can’t tell us is whether anyone laughs, or winces.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Solution</h2>
+          <div>
+            <p>There is a little real play in it: learning where the dots hide, and which buttons lie to you. The run starts slowly, swells until you can’t keep up, then drains to a single buried dot. The sounds and flourishes make every clear feel good, because a parody of compulsion that doesn’t pull at you proves nothing.</p>
+            <p>Then you reach Inbox Zero and get a notification for it. Finish, and you unlock Zen mode: dots forever, with no goal. You can leave whenever you like, though the exit button has a dot on it too. We don’t say what to conclude. Koster’s point is that every game teaches something. We’d like this one to make you ask what the others have been teaching you.</p>
+          </div>
         </section>
         <nav class="making__more" aria-label="More making-of pages">
           <span>Also made here:</span>

@@ -256,7 +256,7 @@ The Play control is the only button: a squared arcade button that reads as an ou
 - **Featured rows** are full height. **More games** (a Headline heading, then `.row--more`) are about half height, with smaller titles and Play beside the text from 1100px.
 - **Aside links** (`.aside`) are quiet underlined mono links beside Play, such as "How it was made". Play stays the only button.
 - **Touch devices** move `data-desktop` rows to the end of the menu, in the DOM.
-- **Making-of pages** (`/making/<game>/`) use the game's field and accent in the header, then three plain sections on tube black.
+- **Making-of pages** (`/making/<game>/`) use the game's field and accent in the header, then four plain sections on tube black (Problem, Hypothesis, Experiment, Solution).
 
 ### Game Row (signature)
 Each row is a full-width band that sets its own accent and field.

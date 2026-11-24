@@ -789,6 +789,10 @@ kbd svg {
   line-height: 1.65;
 }
 
+.making__body p + p {
+  margin-top: 1em;
+}
+
 .making__more {
   display: flex;
   flex-wrap: wrap;
