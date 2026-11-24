@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07090c" />
+    <meta name="color-scheme" content="dark" />
+    <title>How Legends of Loot was made · Zen Wombat</title>
+    <meta name="description" content="A whole game about the part before the game: every menu has a red dot, and clearing one makes more." />
+    <link rel="canonical" href="https://zenwombat.com/making/legends-of-loot/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Zen Wombat" />
+    <meta property="og:title" content="How Legends of Loot was made" />
+    <meta property="og:description" content="A whole game about the part before the game: every menu has a red dot, and clearing one makes more." />
+    <meta property="og:url" content="https://zenwombat.com/making/legends-of-loot/" />
+    <meta property="og:image" content="https://zenwombat.com/img/legends-of-loot.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/tektur-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="strip">
+      <a class="mark" href="/" aria-label="Zen Wombat home">
+        <svg class="mark__glyph" viewBox="0 0 64 40" aria-hidden="true"><use href="#wombat" /></svg>
+        <span class="mark__name">Zen Wombat</span>
+      </a>
+      <a class="aside" href="/">All games</a>
+    </header>
+
+    <main>
+      <article class="making row--loot">
+        <header class="making__head">
+          <div class="making__intro">
+            <h1 class="row__title">How Legends of Loot was made</h1>
+            <p class="row__hook">A whole game about the part before the game: every menu has a red dot, and clearing one makes more.</p>
+            <a class="play" href="https://legendsofloot.zenwombat.com/">Play<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg></a>
+          </div>
+          <img src="/img/legends-of-loot.webp" width="600" height="500" alt="Launcher tiles from Legends of Loot, covered in red notification dots." />
+        </header>
+        <div class="making__body">
+        <section>
+          <h2>The idea</h2>
+          <p>A red dot on a menu means something new is buried inside, and you have to dig for it. Legends of Loot keeps that itch and throws away the game it was meant to sell. You clear notifications until there are none, in an arc that swells to chaos and then drains to zero.</p>
+        </section>
+        <section>
+          <h2>The hard problem</h2>
+          <p>Clearing a notification can set off others, so the run could easily loop forever or strand the player one dot short. Every notification in the main run fires at most once, and a snoozed one comes back at most twice. A bot then clears the game in random order: over 500 runs it finished in 159 to 179 clears, and every one of the 191 notifications could be reached.</p>
+        </section>
+        <section>
+          <h2>What changed</h2>
+          <p>Badge counts are never stored. Each menu counts the live notifications beneath it, so a parent can’t disagree with its children. Once the joke worked, a second pass gave it sound, music, card art and a proper moment at Inbox Zero, because the payoff has to feel earned even when the prize is nothing.</p>
+        </section>
+        <nav class="making__more" aria-label="More making-of pages">
+          <span>Also made here:</span>
+          <a href="/making/save-the-art/">Save the Art</a>
+          <a href="/making/fixed-point/">Fixed Point</a>
+        </nav>
+        </div>
+      </article>
+    </main>
+
+    <footer class="foot">
+      <p>© 2026 Zen Wombat</p>
+      <nav aria-label="Games">
+        <a href="https://legendsofloot.zenwombat.com/">Legends of Loot</a>
+        <a href="https://zenwombat.itch.io/save-the-art">Save the Art</a>
+        <a href="https://fixedpoint.pages.dev/?blitz">Fixed Point</a>
+        <a href="https://garden.zenwombat.com/">Pocket Garden</a>
+        <a href="https://vector.zenwombat.com/">Vector</a>
+      </nav>
+    </footer>
+
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="wombat" viewBox="0 0 64 40">
+        <path
+          d="M7 31C5 20 13 9 29 9c10 0 17 3 21 8l7 4c3 2 3 6-1 7h-4c-2 3-6 4-10 4H13c-4 0-6-1-6-1Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linejoin="round"
+        />
+        <path d="M45 12c-1-3 1-5 3-4 1 1 2 3 1 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+        <path d="M14 32v5M22 32v5M38 32v5M45 31v6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+        <circle cx="51" cy="19" r="1.6" fill="currentColor" />
+      </symbol>
+    </svg>
+  </body>
+</html>

@@ -250,6 +250,12 @@ The Play control is the only button: a squared arcade button that reads as an ou
 - **Game-select menu:** an ordered list of rows. Pointer hover (mouse only), focus, and the up and down arrow keys move the selection. Enter plays the selected game when focus is on the page.
 - **Footer nav:** Martian Mono at 0.75rem in dim phosphor, underlined in faint phosphor with a 4px offset. On hover the text turns to ink and the underline to cyan.
 
+### Tiers
+- **Featured rows** are full height. **More games** (a Headline heading, then `.row--more`) are about half height, with smaller titles and Play beside the text from 1100px.
+- **Aside links** (`.aside`) are quiet underlined mono links beside Play, such as "How it was made". Play stays the only button.
+- **Touch devices** move `data-desktop` rows to the end of the menu, in the DOM.
+- **Making-of pages** (`/making/<game>/`) use the game's field and accent in the header, then three plain sections on tube black.
+
 ### Game Row (signature)
 Each row is a full-width band that sets its own accent and field.
 - **At rest:** tube-black ground, dim title, dim hook, and art dimmed on pointer devices.

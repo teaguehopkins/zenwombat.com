@@ -24,7 +24,13 @@ A tiny studio whose games each take one familiar thing and treat it with care: a
 
 ## Capabilities and Constraints
 
-- Games (only these two for now):
+- Featured: Legends of Loot, Save the Art, Fixed Point (public beta; Play opens `/?blitz`). Each has a `/making/` page.
+- More games: Pocket Garden (public beta, phone first), Vector.
+- Save the Art and Vector are desktop only and move to the end of the menu on touch devices.
+- Game details:
+  - **Save the Art**: https://zenwombat.itch.io/save-the-art. Keys or gamepad; solo or online co-op.
+  - **Fixed Point**: https://fixedpoint.pages.dev. Async co-op; 45-second blitz rounds or classic four-slot runs.
+  - **Pocket Garden**: https://garden.zenwombat.com. Calm turn-based puzzle.
   - **Legends of Loot**: https://legendsofloot.zenwombat.com. A satirical game about clearing notifications in the launcher of a fake free-to-play card game. Runs take 5–10 minutes. Works on phone and desktop with mouse, touch, and keyboard. Has a speedrun timer and Zen mode.
   - **Vector: Realistic Space Flight**: https://vector.zenwombat.com. A top-down space arena with momentum physics: 1 player vs 3 AI. Modes are Slingshot (daily challenge with a global leaderboard, plus practice), Survival, Deathmatch, and King of the Hill. Ship customization and upgrades persist between matches. Keyboard/gamepad only, desktop-oriented (it warns mobile visitors).
 - Vector is served from Render, and its first load can be slow.

@@ -1,4 +1,11 @@
 // Game-select menu: pointer, focus, or arrow keys move the selection; Enter plays.
+// On touch-only devices the desktop-only games move to the end. They move in the DOM, not with CSS
+// order, so reading and focus order match what's on screen.
+if (matchMedia('(hover: none) and (pointer: coarse)').matches) {
+  const more = document.querySelector('[data-more]');
+  document.querySelectorAll('[data-desktop]').forEach((row) => more.append(row));
+}
+
 const rows = [...document.querySelectorAll('[data-row]')];
 let selected = 0;
 
@@ -21,7 +28,7 @@ rows.forEach((row, i) => {
 
 // Arrow keys only drive the menu while it has focus or is on screen with nothing else focused;
 // past either end they fall through to normal scrolling.
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('[data-menus]');
 let menuInView = true;
 new IntersectionObserver(([entry]) => (menuInView = entry.isIntersecting)).observe(menu);
 
