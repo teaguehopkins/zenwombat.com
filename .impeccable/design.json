@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T23:23:30+00:00",
+  "generatedAt": "2026-11-24T22:18:51+00:00",
   "title": "Design System: Zen Wombat",
   "extensions": {
     "colorMeta": {
@@ -183,6 +183,126 @@
           "#93dafb",
           "#d8f2fd"
         ]
+      },
+      "art-field": {
+        "role": "neutral",
+        "displayName": "Art Field",
+        "canonical": "#1d170d",
+        "tonalRamp": [
+          "#1c160d",
+          "#382d19",
+          "#5c4929",
+          "#866a3c",
+          "#b08c4f",
+          "#c6ac80",
+          "#dcccb2",
+          "#f2ede3"
+        ]
+      },
+      "art-gilt": {
+        "role": "primary",
+        "displayName": "Art Gilt",
+        "canonical": "#d4ac2e",
+        "tonalRamp": [
+          "#221b07",
+          "#44370e",
+          "#6e5917",
+          "#a18221",
+          "#d3ab2c",
+          "#e0c367",
+          "#ecdaa2",
+          "#f8f2dd"
+        ]
+      },
+      "art-ivory": {
+        "role": "neutral",
+        "displayName": "Art Ivory",
+        "canonical": "#efe6d2",
+        "tonalRamp": [
+          "#1e180b",
+          "#3c3015",
+          "#624e23",
+          "#8f7233",
+          "#bc9643",
+          "#cfb478",
+          "#e2d1ac",
+          "#f4eee1"
+        ]
+      },
+      "art-stamp": {
+        "role": "secondary",
+        "displayName": "Art Stamp",
+        "canonical": "#e0574a",
+        "tonalRamp": [
+          "#230806",
+          "#46110c",
+          "#711c13",
+          "#a5281c",
+          "#da3525",
+          "#e46e62",
+          "#efa69f",
+          "#f9dfdc"
+        ]
+      },
+      "fixed-field": {
+        "role": "neutral",
+        "displayName": "Fixed Field",
+        "canonical": "#120f1d",
+        "tonalRamp": [
+          "#110e1b",
+          "#211c36",
+          "#362d57",
+          "#4f4280",
+          "#6857a8",
+          "#9386c0",
+          "#bdb5d9",
+          "#e7e4f1"
+        ]
+      },
+      "fixed-violet": {
+        "role": "primary",
+        "displayName": "Ghost Violet",
+        "canonical": "#b18cff",
+        "tonalRamp": [
+          "#0d0029",
+          "#1a0052",
+          "#2b0085",
+          "#3e00c2",
+          "#5200ff",
+          "#8247ff",
+          "#b38fff",
+          "#e3d6ff"
+        ]
+      },
+      "garden-field": {
+        "role": "neutral",
+        "displayName": "Garden Field",
+        "canonical": "#111a0f",
+        "tonalRamp": [
+          "#111a0f",
+          "#22341e",
+          "#375431",
+          "#507b47",
+          "#6aa25d",
+          "#94bc8b",
+          "#bdd6b8",
+          "#e7f0e5"
+        ]
+      },
+      "garden-leaf": {
+        "role": "primary",
+        "displayName": "Garden Leaf",
+        "canonical": "#7cc462",
+        "tonalRamp": [
+          "#101e0b",
+          "#203b16",
+          "#346024",
+          "#4c8d35",
+          "#64b946",
+          "#90cd7a",
+          "#bbe0ad",
+          "#e6f4e1"
+        ]
       }
     },
     "typographyMeta": {
@@ -284,6 +404,16 @@
         "name": "coarse",
         "value": "(hover: none), (pointer: coarse)",
         "purpose": "Controls bar hidden."
+      },
+      {
+        "name": "more-wide",
+        "value": "1100px",
+        "purpose": "Min-width: Play sits beside the text in More games rows."
+      },
+      {
+        "name": "touch",
+        "value": "(hover: none) and (pointer: coarse)",
+        "purpose": "Desktop-only rows move to the end of the menu in the DOM."
       }
     ]
   },
@@ -359,6 +489,30 @@
       "description": "Mono footer links with faint underline that turns cyan on hover.",
       "html": "<nav class=\"ds-foot\"><a href=\"#\">Legends of Loot</a><a href=\"#\">Vector</a></nav>",
       "css": ":host{--ground:#07090c;--ink:#dcefff;--ink-soft:#9db2c2;--ink-faint:#5d7080;--rule:rgb(150 215 255 / 0.2);--bloom:rgb(150 215 255 / 0.35);--loot-field:#24170c;--loot-gold:#f0c35a;--loot-cream:#f3dfb4;--loot-red:#d92b26;--vec-field:#0a131a;--vec-cyan:#81d4fa;--display:'Tektur','Arial Narrow',sans-serif;--mono:'Martian Mono',ui-monospace,monospace;--text:'Tektur',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}.ds-foot{display:flex;gap:24px;padding:24px;background:var(--ground);border-top:1px solid var(--rule);font-family:var(--mono);font-weight:350;font-stretch:87.5%;font-size:0.75rem;}.ds-foot a{color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--ink-faint);text-underline-offset:4px;}.ds-foot a:hover{color:var(--ink);text-decoration-color:var(--vec-cyan);}.ds-foot a:focus-visible{outline:2px solid var(--vec-cyan);outline-offset:4px;border-radius:2px;}"
+    },
+    {
+      "name": "Public Beta Callout",
+      "kind": "chip",
+      "refersTo": "",
+      "description": "Outlined mono callout in the row accent, led by a dot with one cut corner.",
+      "html": "<span class=\"ds-cut\">Public beta</span>",
+      "css": ":host{--ground:#07090c;--ink:#dcefff;--ink-soft:#9db2c2;--ink-faint:#5d7080;--rule:rgb(150 215 255 / 0.2);--bloom:rgb(150 215 255 / 0.35);--loot-field:#24170c;--loot-gold:#f0c35a;--loot-cream:#f3dfb4;--loot-red:#d92b26;--vec-field:#0a131a;--vec-cyan:#81d4fa;--display:'Tektur','Arial Narrow',sans-serif;--mono:'Martian Mono',ui-monospace,monospace;--text:'Tektur',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}:host{--art-field:#1d170d;--art-gilt:#d4ac2e;--art-ivory:#efe6d2;--art-stamp:#e0574a;--fixed-field:#120f1d;--fixed-violet:#b18cff;--garden-field:#111a0f;--garden-leaf:#7cc462;}.ds-cut{display:inline-flex;align-items:center;gap:.6em;padding:.45em .7em;border:1px solid color-mix(in srgb,var(--fixed-violet) 55%,transparent);color:var(--fixed-violet);font-family:var(--mono);font-weight:500;font-size:.625rem;letter-spacing:.14em;line-height:1;text-transform:uppercase;white-space:nowrap}.ds-cut::before{content:'';width:.55em;height:.55em;background:currentColor;clip-path:polygon(0 0,100% 0,100% 55%,55% 100%,0 100%)}"
+    },
+    {
+      "name": "Aside Link",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Quiet underlined mono link beside Play.",
+      "html": "<a class=\"ds-aside\" href=\"#\">How it was made</a>",
+      "css": ":host{--ground:#07090c;--ink:#dcefff;--ink-soft:#9db2c2;--ink-faint:#5d7080;--rule:rgb(150 215 255 / 0.2);--bloom:rgb(150 215 255 / 0.35);--loot-field:#24170c;--loot-gold:#f0c35a;--loot-cream:#f3dfb4;--loot-red:#d92b26;--vec-field:#0a131a;--vec-cyan:#81d4fa;--display:'Tektur','Arial Narrow',sans-serif;--mono:'Martian Mono',ui-monospace,monospace;--text:'Tektur',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}:host{--art-field:#1d170d;--art-gilt:#d4ac2e;--art-ivory:#efe6d2;--art-stamp:#e0574a;--fixed-field:#120f1d;--fixed-violet:#b18cff;--garden-field:#111a0f;--garden-leaf:#7cc462;}.ds-aside{padding:12px 0;font-family:var(--mono);font-size:.8125rem;color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--ink-faint);text-underline-offset:4px}.ds-aside:hover{color:var(--ink);text-decoration-color:var(--vec-cyan)}.ds-aside:focus-visible{outline:2px solid var(--vec-cyan);outline-offset:4px;border-radius:2px}"
+    },
+    {
+      "name": "More Games Row",
+      "kind": "card",
+      "refersTo": "",
+      "description": "Half-height row with a smaller title; Play sits beside the text on wide screens.",
+      "html": "<div class=\"ds-more\"><div><h3>Pocket Garden</h3><p>A calm garden puzzle in three seasons.</p></div><a class=\"ds-play\" href=\"#\">Play<svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M4 10h11M11 5l5 5-5 5\"/></svg></a></div>",
+      "css": ":host{--ground:#07090c;--ink:#dcefff;--ink-soft:#9db2c2;--ink-faint:#5d7080;--rule:rgb(150 215 255 / 0.2);--bloom:rgb(150 215 255 / 0.35);--loot-field:#24170c;--loot-gold:#f0c35a;--loot-cream:#f3dfb4;--loot-red:#d92b26;--vec-field:#0a131a;--vec-cyan:#81d4fa;--display:'Tektur','Arial Narrow',sans-serif;--mono:'Martian Mono',ui-monospace,monospace;--text:'Tektur',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}:host{--art-field:#1d170d;--art-gilt:#d4ac2e;--art-ivory:#efe6d2;--art-stamp:#e0574a;--fixed-field:#120f1d;--fixed-violet:#b18cff;--garden-field:#111a0f;--garden-leaf:#7cc462;}.ds-more{--accent:var(--garden-leaf);--field:var(--garden-field);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px 40px;padding:28px 24px 28px 60px;background:var(--ground);border-bottom:1px solid var(--rule)}.ds-more h3{margin:0 0 12px;font-family:var(--display);font-weight:800;font-stretch:85%;font-size:clamp(1.75rem,1.2vw + 1.25rem,2.5rem);line-height:.95;text-transform:uppercase;color:var(--ink-soft)}.ds-more p{margin:0;font-family:var(--text);line-height:1.5;color:var(--ink-soft)}.ds-play{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:0 22px 0 26px;border:1.5px solid var(--accent);border-radius:0;background:transparent;color:var(--accent);font-family:var(--display);font-weight:700;font-stretch:87.5%;font-size:1.125rem;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background-color 250ms var(--ease-out),color 250ms var(--ease-out),box-shadow 250ms var(--ease-out);}.ds-play svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square;transition:transform 300ms var(--ease-out);}.ds-play:hover svg,.ds-play:focus-visible svg{transform:translateX(4px);}.ds-play:focus-visible{outline:2px solid var(--accent);outline-offset:4px;}.ds-play:active{transform:translateY(1px);}.ds-play--lit{background:var(--accent);color:var(--field);box-shadow:0 8px 18px -8px rgb(0 0 0 / 0.7);}"
     }
   ],
   "narrative": {

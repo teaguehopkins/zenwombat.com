@@ -20,6 +20,8 @@ colors:
   art-stamp: "#e0574a"
   fixed-field: "#120f1d"
   fixed-violet: "#b18cff"
+  garden-field: "#111a0f"
+  garden-leaf: "#7cc462"
 typography:
   display:
     fontFamily: "Tektur, 'Arial Narrow', sans-serif"
