@@ -24,7 +24,7 @@ A tiny studio whose games each take one familiar thing and treat it with care: a
 
 ## Capabilities and Constraints
 
-- Featured: Legends of Loot, Save the Art, Fixed Point (public beta; Play opens `/?blitz`). Each has a `/making/` page about its game design, read through Raph Koster's *A Theory of Fun* and framed as product discovery (problem, hypothesis, experiment, solution; after Marty Cagan). Opens with the question that started the game.
+- Featured: Legends of Loot, Save the Art, Fixed Point (public beta; Play opens `/?blitz`). Each has a design essay (`/design/`) about its game design, read through Raph Koster's *A Theory of Fun* and framed as product discovery (problem, hypothesis, experiment, solution; after Marty Cagan). Opens with the question that started the game.
 - More games: Pocket Garden (public beta, phone first), Vector.
 - Save the Art and Vector are desktop only and move to the end of the menu on touch devices.
 - Game details:

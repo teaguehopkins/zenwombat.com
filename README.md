@@ -1,6 +1,6 @@
 # zenwombat.com
 
-The Zen Wombat studio homepage: a static menu and making-of pages linking to the studio's browser games.
+The Zen Wombat studio homepage: a static menu and design essays linking to the studio's browser games.
 
 - Fixed Point: https://fixedpoint.pages.dev (public beta; working title)
 - Pocket Garden: https://garden.zenwombat.com (public beta)
@@ -20,7 +20,7 @@ Because it deploys through Actions, the custom domain (`zenwombat.com`) is set i
 
 ## Adding a game
 
-The menu has two lists: featured (full rows, each with a page in `site/making/`) and More games (`.row--more`).
+The menu has two lists: featured (full rows, each with a page in `site/design/`) and More games (`.row--more`).
 Mark desktop-only rows `data-desktop`; they move last on touch devices.
 
 Add a `<li class="row row--yourgame" data-row>` to the menu in `site/index.html`, give it `--accent` and

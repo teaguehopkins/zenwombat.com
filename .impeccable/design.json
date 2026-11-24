@@ -503,7 +503,7 @@
       "kind": "nav",
       "refersTo": "",
       "description": "Quiet underlined mono link beside Play.",
-      "html": "<a class=\"ds-aside\" href=\"#\">How it was made</a>",
+      "html": "<a class=\"ds-aside\" href=\"#\">Design essay</a>",
       "css": ":host{--ground:#07090c;--ink:#dcefff;--ink-soft:#9db2c2;--ink-faint:#5d7080;--rule:rgb(150 215 255 / 0.2);--bloom:rgb(150 215 255 / 0.35);--loot-field:#24170c;--loot-gold:#f0c35a;--loot-cream:#f3dfb4;--loot-red:#d92b26;--vec-field:#0a131a;--vec-cyan:#81d4fa;--display:'Tektur','Arial Narrow',sans-serif;--mono:'Martian Mono',ui-monospace,monospace;--text:'Tektur',system-ui,sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1);}:host{--art-field:#1d170d;--art-gilt:#d4ac2e;--art-ivory:#efe6d2;--art-stamp:#e0574a;--fixed-field:#120f1d;--fixed-violet:#b18cff;--garden-field:#111a0f;--garden-leaf:#7cc462;}.ds-aside{padding:12px 0;font-family:var(--mono);font-size:.8125rem;color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--ink-faint);text-underline-offset:4px}.ds-aside:hover{color:var(--ink);text-decoration-color:var(--vec-cyan)}.ds-aside:focus-visible{outline:2px solid var(--vec-cyan);outline-offset:4px;border-radius:2px}"
     },
     {
@@ -543,7 +543,7 @@
       },
       {
         "name": "The Two Voices Rule",
-        "body": "Tektur speaks for names, controls and prose. Martian Mono speaks for data, hints, keys and system text. Never swap them.",
+        "body": "Tektur speaks for names, controls and short prose. Martian Mono speaks for data, hints, keys and system text. Never swap them.",
         "section": "typography"
       },
       {
@@ -560,6 +560,11 @@
         "name": "The Phosphor-Only Glow Rule",
         "body": "Coloured glow belongs only to stroked line ink: the wordmark, the wombat glyph and the cursor ship. Titles, prose and buttons never get coloured glow or text-shadow. Glow inside game art (the canvas's ships and gravity well) belongs to the art and is not a UI precedent.",
         "section": "elevation"
+      },
+      {
+        "name": "The Reading Voice Rule",
+        "section": "typography",
+        "body": "Design essays set prose and the opening question in Literata. It appears nowhere else."
       }
     ],
     "dos": [

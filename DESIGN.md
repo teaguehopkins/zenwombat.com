@@ -182,7 +182,9 @@ Both faces are self-hosted variable fonts under the SIL OFL. Tektur spans weight
 - **Subtitle** (Martian Mono 400, 100% width, 0.8125rem, +0.12em): a game's real subtitle under its title, such as Vector's "Realistic Space Flight".
 
 ### Named Rules
-**The Two Voices Rule.** Tektur speaks for names, controls and prose. Martian Mono speaks for data, hints, keys and system text. Never swap them.
+**The Reading Voice Rule.** Design essays set prose and the opening question in Literata (variable, SIL OFL, 1.1875rem, line-height 1.7, about 37rem wide). It appears nowhere else.
+
+**The Two Voices Rule.** Tektur speaks for names, controls and short prose. Martian Mono speaks for data, hints, keys and system text. Never swap them.
 
 **The Full-Width Prose Rule.** Running prose in Tektur is always weight 400 at 100% width. Only display sizes are condensed.
 
@@ -254,9 +256,9 @@ The Play control is the only button: a squared arcade button that reads as an ou
 
 ### Tiers
 - **Featured rows** are full height. **More games** (a Headline heading, then `.row--more`) are about half height, with smaller titles and Play beside the text from 1100px.
-- **Aside links** (`.aside`) are quiet underlined mono links beside Play, such as "How it was made". Play stays the only button.
+- **Aside links** (`.aside`) are quiet underlined mono links beside Play, such as "Design essay". Play stays the only button.
 - **Touch devices** move `data-desktop` rows to the end of the menu, in the DOM.
-- **Making-of pages** (`/making/<game>/`) use the game's field and accent in the header, then four plain sections on tube black (Problem, Hypothesis, Experiment, Solution).
+- **Design essays** (`/design/<game>/`) use the game's field and accent in the header, then four plain sections on tube black (Problem, Hypothesis, Experiment, Solution).
 
 ### Game Row (signature)
 Each row is a full-width band that sets its own accent and field.
